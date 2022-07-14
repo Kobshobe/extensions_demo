@@ -11,8 +11,5 @@
         "default_title": "extensions_demo_title",
         "default_icon": "assets/images/logo.png",
         "default_popup": "popup.html"
-    },
-    "background": {
-        "service_worker": "background.js"
     }
 }

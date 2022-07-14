@@ -5,12 +5,11 @@
   "repository": "git@github.com:Kobshobe/extensions_demo.git",
   "license": "MIT",
   "scripts": {
-    "build": "vue-cli-service build && webpack"
+    "build": "vue-cli-service build"
   },
   "devDependencies": {
     "@vue/cli-service": "^5.0.8",
-    "vue-template-compiler": "^2.7.5",
-    "webpack-cli": "^4.10.0"
+    "vue-template-compiler": "^2.7.5"
   },
   "dependencies": {
     "vue": "^3.2.37"
