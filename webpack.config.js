@@ -1,4 +1,7 @@
 const path = require('path')
+const AutoImport = require('unplugin-auto-import/webpack')
+const Components = require('unplugin-vue-components/webpack')
+const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 
 const resolve = (dir) => path.resolve(__dirname, dir)
 
@@ -13,5 +16,13 @@ module.exports = {
     output: {
         path: resolve('dist'),
         filename: '[name].js'
-    }
+    },
+    plugins: [
+        AutoImport({
+          resolvers: [ElementPlusResolver()],
+        }),
+        Components({
+          resolvers: [ElementPlusResolver()],
+        }),
+      ],
 }

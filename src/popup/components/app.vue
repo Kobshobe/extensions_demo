@@ -1,8 +1,8 @@
 <template>
-    <div style="padding:20px;height:200px;width: 320px;">
-        <h2>Extension Demo</h2>
-        <h3>fetch_fake: {{resp}}</h3>
-        <button @click="req">req</button>
+    <div class="main">
+        <h2 class="title">Extension Demo2</h2>
+        <h3 class="req_title">fetch_fake: {{resp}}</h3>
+        <el-button @click="req" type="success">request</el-button>
     </div>
 </template>
 
@@ -29,3 +29,17 @@ export default defineComponent({
     }
 })
 </script>
+
+<style lang="scss">
+.main {
+    padding:20px;
+    height:200px;
+    width: 320px;
+    .title {
+        padding-bottom: 30px;
+    }
+    .req_title {
+        padding-bottom: 5px;
+    }
+}
+</style>

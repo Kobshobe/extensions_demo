@@ -1,5 +1,8 @@
 const path = require('path');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const AutoImport = require('unplugin-auto-import/webpack')
+const Components = require('unplugin-vue-components/webpack')
+const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 
 
 const copyFile = [
@@ -16,6 +19,12 @@ const copyFile = [
 const plugins = [
     new CopyWebpackPlugin({
         patterns: copyFile
+    }),
+    AutoImport({
+        resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+        resolvers: [ElementPlusResolver()],
     })
 ]
 
@@ -30,6 +39,7 @@ pages["popup"] = {
 module.exports = {
     pages,
     configureWebpack: {
+        devtool: 'inline-source-map',
         plugins
     }
 }
