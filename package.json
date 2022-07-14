@@ -1,0 +1,17 @@
+{
+  "name": "extensions_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Kobshobe/extensions_demo.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "vue-cli-service build"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "vue-template-compiler": "^2.7.5"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  }
+}
