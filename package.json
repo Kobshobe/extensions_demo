@@ -5,7 +5,7 @@
   "repository": "git@github.com:Kobshobe/extensions_demo.git",
   "license": "MIT",
   "scripts": {
-    "build": "vue-cli-service build && webpack",
+    "build": "vue-cli-service build",
     "bg:watch": "webpack --watch",
     "front:watch": "vue-cli-service build --watch"
   },

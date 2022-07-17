@@ -14,5 +14,22 @@
     },
     "background": {
         "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": [
+                "css/chunk-vendors_some_id_xxxxx.css",
+                "css/content_some_id_xxxxx_some_id_xxxxx.css"
+              ],
+              "js": [
+                "content_some_id_xxxxx.js",
+                "chunk-vendors.js"
+              ]
+        }
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
     }
 }
